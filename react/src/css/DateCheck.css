@@ -1,0 +1,26 @@
+.tripTitle{
+    color:#706F6F;
+    padding-top: 10px;
+}
+.tripTitle label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:12px;
+}
+.tripTitle label input{
+    font-size: 16px;
+}
+.dateCheckResult{
+    margin-top: 35px;
+}
+.dateCheckResult p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F6A354;
+    border-radius: 20px;
+    width: 290px;
+    height:35px;
+    color:#706F6F;
+}

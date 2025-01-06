@@ -1,0 +1,116 @@
+/* .addDirectionFrame::-webkit-scrollbar {
+    display: none;
+} */
+
+.addData{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+.addDataBtns{
+    width: 50px;
+    height:38px;
+    border-radius: 20px;
+    border: none;
+    background-color: #FFA551;
+    margin: 10px 0;
+    color: aliceblue;
+}
+
+.addData input{
+    border-radius: 20px;
+    border:2px solid #dadada;
+    height:34px;
+    text-align: center;
+}
+
+.addressBtn{
+    background-color: #FFA551;
+    color:#fff;
+    border: none;
+    height: 25px;
+    border-radius: 20px;
+    padding:2px 12px 2px 12px;
+}
+
+.listNumber{
+    font-size:16px;
+    font-weight:bold;
+    color:#FFA551;
+    margin-right: 10px;
+
+}
+
+.listTitle{
+    margin-right: 10px;
+}
+
+.roadAddress{
+    font-size:12px;
+}
+
+/* 경유지 버튼 */
+
+.plusBtn{
+    display: flex;
+
+}
+
+.plusBtn button{
+    width:183px;
+    height:38px;
+    margin : 10px 0 10px 10px;
+    background-color: #fff;
+    border: 2px solid #FFA551;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#FFA551;
+    cursor: pointer;
+    transition:background-color 0.3s ease, color 0.3s ease;
+    font-size: 14px;
+}
+
+.plusBtn button:hover{
+    background-color: #FFA551;
+    color:#fff;
+}
+
+.removeBtn{
+    margin-left: 5px;
+    width: 50px;
+    height:38px;
+    border-radius: 20px;
+    border: none;
+    background-color: #9D9D9C;
+    color: #fff;
+}
+.saveBtn{
+    width: 230px;
+    height:38px;
+    border-radius: 20px;
+    border: none;
+    background-color: #FFA551;
+    color: #fff;
+    margin:10px 0 0 10px;
+    font-size: 14px;
+}
+/* 
+.plusSearch img{
+    width:100%;
+} */
+
+/* 모달창 */
+
+
+.modalBackBtn{
+    width: 230px;
+    height:38px;
+    border-radius: 20px;
+    border: none;
+    background-color: #FFA551;
+    color: #fff;
+}

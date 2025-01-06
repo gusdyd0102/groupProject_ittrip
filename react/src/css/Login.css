@@ -1,0 +1,78 @@
+/* 클래스,아이디 규칙 : 카멜표기 */
+body, html {
+    height: 100%; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+
+
+#login {
+    text-align: center;
+    /* background-color: #F6F6F6; */
+    border-radius: 20px;
+    width: 800px;
+    font-family: "Paperlogy, sans-serif";
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: column; /* 로고와 폼 요소들이 세로로 정렬되도록 설정 */
+    justify-content: center; /* 세로 중앙 정렬 */
+    align-items: center; /* 가로 중앙 정렬 */
+    height: 100vh; /* 화면 전체 높이를 사용 */
+}
+
+#loginLogo{
+    width: 120px;
+}
+
+#login input {
+    height: 50px;
+    width: 500px;
+    border: 1px solid #DADADA;
+    border-radius: 28px;
+    margin: 10px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.socialBtn,.loginBt{
+    
+    height: 50px;
+    width: 525px;
+    margin: 10px 0;
+    border-radius: 25px;
+    border : none;
+    color: #191919;
+    font-size: 16px;
+    font-weight: 550;
+}
+
+.socialBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.loginBt{
+    background-color: #FFA551;
+    
+}
+
+.kakaoBt{
+    margin-left: 10px;
+    background-color: #FEE500;
+}
+
+.naverBt{
+    margin-left: 10px;
+    background-color: #00ff1f;
+}
+
+.googleBt{
+    margin-left: 10px;
+    background-color: #00aee1;
+}

@@ -1,0 +1,2 @@
+spring/* filter=lfs diff=lfs merge=lfs -text
+react/* filter=lfs diff=lfs merge=lfs -text

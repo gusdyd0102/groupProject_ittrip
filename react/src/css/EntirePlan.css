@@ -1,0 +1,66 @@
+.myPlan{
+    width: 1000px;
+}
+.myPlan ul{
+    padding:0;
+}
+.myPlanContainer{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #dadada;
+    margin-top: 20px;
+}
+.myPlanContainer button:hover{
+    background-color: #f78b26;
+}
+.myPlanContainer input{
+    border: 2px solid #dadada;
+    border-radius: 10px;
+    height:30px;
+}
+.mapFrame{
+    flex:1;
+    width:50%;
+    height:70vh;
+}
+.planFrame{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    width:300px;
+}
+.myPlanContent{
+    margin-top: 20px;
+}
+.myPlanContent::before{
+    content:"";
+    display: block;
+    border: 1px solid #dadada;
+}
+.myPlanContent button{
+    border:none;
+    border-radius: 10px;
+    background-color: #F6A354;
+    width:50px;
+    height:30px;
+    color:#fff;
+}
+
+.newTripBt{
+    text-align: center;
+}
+
+.newTripBt button{
+    border:none;
+    border-radius: 10px;
+    background-color: #F6A354;
+    width:80px;
+    height:40px;
+    color:#fff;
+}
+
+.tripCheck ul li {
+    display: flex;
+    align-items: center;
+}

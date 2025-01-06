@@ -1,0 +1,78 @@
+
+
+/* 클래스,아이디 규칙 : 카멜표기 */
+.header {
+    display: flex;
+    align-items: center;
+
+    /* 
+    justify-content: center; 
+     세로 중앙 정렬 */
+    width: 100%;            /* 가로 창 전체 너비 */
+    height: 100px;          /* 높이는 140px */
+    background-color: #fff;
+    position: fixed;        /* 스크롤 시 고정 */
+    top: 0;                 /* 화면 상단에 고정 */
+    left: 0;                /* 화면 왼쪽에 고정 */
+    z-index: 1;
+
+}
+
+.header a:hover {
+    transition:0.5s;
+    color:#F6A354;
+}
+
+.logo{
+    flex:1;
+    margin-left: 30px;
+}
+
+.headerLogo{
+    margin: 0 75px 0 75px;
+    width: 120px;
+}
+
+.menuBar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    text-decoration: none;
+    margin: 0 30px;
+    color: #9D9D9C;
+    font-size: 20px;
+}
+
+.headerBtn{
+    text-align: center;
+    font-size: 15px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerBtn a{
+    color:#9D9D9C;
+    font-family: 'Pretendard-Regular';
+    font-weight: 100;
+}
+
+.headerBtn a:first-child:after{
+    content: "";
+    display: inline-block;
+    width:1px;
+    height:10px;
+    background-color: #9D9D9C;
+    margin: 0 10px;
+}
+
+.headerProfileImg{
+    width:30px;
+}
+.headerProfileImg img {
+    width:100%;
+}
+

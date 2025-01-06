@@ -1,0 +1,38 @@
+#mapPlan{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+
+#map-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+#dayFrame{
+    display: flex;    
+    position: absolute;  
+    top: 10px;
+    left: 14px;
+    font-family: 'GmarketSansMedium';
+}
+
+#dayChecks input{
+    border: none;
+    border-radius: 8px;
+    background-color: #F6A354;
+    color:#fff;
+    width:45px;
+    height:30px;
+    font-size: 12px;
+}
+#dayChecks input:hover{
+    background-color: #f78b26;
+}
+#dayChecks input:focus{
+    background-color: #f78b26;
+}

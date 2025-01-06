@@ -1,0 +1,94 @@
+#myPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+
+#myPage button{
+    width: 110px;
+    height: 38px;
+    border-radius: 20px;
+    border:none;
+    color: #fff;
+    font-size: 15px;
+    background-color: #F6A354;
+    margin-bottom: 20px;
+}
+#myPage button:hover{
+    background-color: #f78b26;
+}
+
+.myPageContents {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    border-top : 1px solid #b9b9b9;
+    padding-top: 35px;
+}
+#profileFrame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    object-fit: cover;
+}
+#profileFrame input{
+    display: none;
+}
+#profileFrame div{
+    margin-bottom : 20px;
+}
+
+#profileFrame div{
+    width:150px;
+    height: 150px;
+    background-color: #b9b9b9;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#profileFrame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#myInfo{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+#myInfo input{
+    border-radius: 15px;
+    height:20px;
+    color: #666;
+    text-align: center;
+    border-width: 2px;
+
+}
+#myInfoFrame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#myInfoFrame button:first-child{
+    margin-right: 20px;
+}
+
+.UserImg img{
+    width: 100%;
+
+}
+#myInfoFrame{
+    display: flex;
+    flex-direction: column; /* 버튼과 myInfo를 세로로 정렬 */
+    align-items: flex-start;
+    justify-content: center; /* 수직 방향 정렬 */
+    color: #575756;
+}
