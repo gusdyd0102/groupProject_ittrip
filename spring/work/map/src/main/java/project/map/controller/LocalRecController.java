@@ -40,9 +40,9 @@ public class LocalRecController {
 			String uri = UriComponentsBuilder
 					.fromHttpUrl("http://apis.data.go.kr/B551011/TarRlteTarService/areaBasedList")
 					.queryParam("serviceKey", serviceKey).queryParam("MobileOS", "WEB")
-					.queryParam("MobileApp", "ittrip").queryParam("baseYm","202409")
+					.queryParam("MobileApp", "AppTest").queryParam("baseYm","202407")
 					.queryParam("areaCd", dto.getAreaCd()).queryParam("signguCd", dto.getSignguCd())
-					.queryParam("numOfRows", "60").queryParam("_type", "json").build(false) // 추가적인 URL 인코딩 방지
+					.queryParam("numOfRows", "100").queryParam("_type", "json").build(false) // 추가적인 URL 인코딩 방지
 					.toUriString();
 
 			PublicDataDTO response = webClient.get().uri(uri).accept(MediaType.APPLICATION_JSON) // XML 형식 요청 명시

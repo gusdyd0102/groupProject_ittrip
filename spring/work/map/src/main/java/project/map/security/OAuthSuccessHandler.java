@@ -25,7 +25,7 @@ import lombok.extern.slf4j.Slf4j;
 @AllArgsConstructor
 public class OAuthSuccessHandler extends SimpleUrlAuthenticationSuccessHandler {
 	
-	private static final String LOCAL_REDIRECT_URL = "http://ittrip.shop";
+	private static final String LOCAL_REDIRECT_URL = "http://ittrip.life";
 	
 	@Autowired
 	TokenProvider tokenProvider ;
