@@ -1,0 +1,112 @@
+.myPlan {
+  width: 1000px;
+  height: 800px;
+  overflow: scroll;
+}
+.myPlan::-webkit-scrollbar {
+  display: none;
+}
+
+.myPlan > h2 {
+  margin-top: 100px;
+}
+
+.myPlan > ul {
+  padding: 0;
+}
+.myPlanContainer {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid #dadada;
+  border-radius: 30px;
+  margin-top: 20px;
+  height: 700px;
+  overflow: hidden;
+}
+.myPlanContainer button:hover {
+  background-color: #f78b26;
+}
+.myPlanContainer input {
+  border: 2px solid #dadada;
+  border-radius: 10px;
+  height: 30px;
+}
+.mapFrame {
+  flex: 1;
+  width: 50%;
+  height: auto;
+}
+.planFrame {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  min-width:220px;
+  min-height: 500px;
+  overflow: scroll;
+}
+.planFrame::-webkit-scrollbar {
+  display: none;
+}
+.myPlanContent {
+  margin-top: 20px;
+}
+.myPlanContent::before {
+  content: "";
+  display: block;
+  border: 1px solid #dadada;
+}
+.myPlanContent .saveBtn {
+  
+  border: none;
+  border-radius: 10px;
+  background-color: #f6a354;
+  height: 30px;
+  color: #fff;
+}
+
+.newTripBt {
+  text-align: center;
+}
+
+.newTripBt button {
+  border: none;
+  border-radius: 10px;
+  background-color: #f6a354;
+  width: 80px;
+  height: 40px;
+  color: #fff;
+}
+
+.tripCheck ul li {
+  display: flex;
+  align-items: center;
+}
+.tripTitle{
+  text-align: center;
+}
+.tripTitle p {
+  font-size: 30px;
+  font-family: 'GmarketSansMedium';
+  color:#f6a354;
+  font-weight: bold;
+}
+.duration{
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  background-color: #fff;
+  width : auto;
+  height: auto;
+  border:3px solid #f6a354;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.duration p {
+  margin:10px;
+  color:#f6a354;
+  font-weight: bold;
+}
+

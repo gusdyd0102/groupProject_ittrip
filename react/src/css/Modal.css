@@ -1,0 +1,448 @@
+/* Modal.css */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.5); 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.modal-backdrop.open{
+    opacity: 1;
+    transform: scale(1); 
+    visibility: visible;
+}
+/* 모달창 기본 공통 css */
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    height: auto;
+    max-width: 90%;
+    opacity: 0;
+    transform: scale(0.5); 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.modal-content.open{
+    transform: scale(1); 
+    opacity: 1; 
+}
+
+.modal-content h2 {
+    color: #F6A354;
+    margin:0;
+
+}
+
+.modal-default {
+    width: 400px;
+    height: auto;
+    max-width: 90%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.modal-actions button {
+    min-width:80px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #F6A354;
+    color: white;
+}
+
+.modal-actions button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+}
+
+.modal-actions button[type="button"] {
+    background-color: #F6A354;
+    color: white;
+}
+
+/* Header.js 모달 전용 */
+/* 날짜 입력 css */
+.modal-trip-plan {
+    width: 480px;
+    /* 더 넓은 크기 */
+    height: 750px;
+    /* 내용에 따라 높이 조정 */
+    max-width: 90%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tripTitle label {
+    color: #706F6F;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.modal-trip-plan input {
+    border-radius: 20px;
+    width: 170px;
+    height: 25px;
+    text-align: center;
+    color: #706F6F;
+}
+.tripPlan_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tripDates {
+    display: flex;
+    flex-direction: row;
+}
+
+.tripDates h3 {
+    color: #706F6F;
+    font-size: 17px;
+}
+.dateContents {
+    text-align: center;
+}
+
+.modal-trip-plan .modal-actions {
+    margin-top: 20px;
+}
+.react-datepicker__day:hover {
+    background-color: #F6A354;
+}
+
+/* newTrip 모달 */
+.newTripModal {
+    font-family: 'Pretendard-Regular';
+    height: auto;
+    width: 700px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newTripModal input {
+    padding-left: 10px;
+}
+
+.searchList {
+    width:600px;
+    max-height: 300px;
+    overflow: scroll;
+}
+.searchList::-webkit-scrollbar {
+    display: none;
+}
+.searchList li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.listNumber {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ffa551;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 모바일 반응형 전용 모달 */
+/* Main 전용 css */
+/* 모바일 반응형 */
+
+/* Mainmodal 전용 css */
+.mobile .modal-content.mainModal{
+  width:70vw;
+  height: 75vh;
+  padding: 15px;
+  margin-top: 100px;
+}
+
+.mobile .mainLocal{
+    margin-top: 20px;
+}
+.mobile .siGun{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    width: 100%;
+}
+.mobile .siGunText{
+    position: static;
+    text-align: center;
+    width: 50vw;
+}
+.mobile .siGunText .seoulKo {
+    font-size: 25px;
+}
+.mobile .siGunText .seoulEn {
+    font-size: 15px;
+}
+.mobile .siGunExplain{
+    font-size: 12px;
+}
+.mobile .siGunImg{
+    width:45vw;
+}
+.mobile .siGunImg img{
+    width:100%;
+    height: 100%;
+}
+.mobile .tripSelect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mobile .tripSelect p{
+    font-size:15px;
+}
+.mobile .guSelect {
+    width:50vw;
+    border-radius: 10px;
+    font-size: 12px;
+    height: 10vh;
+    text-align: center;
+    overflow: scroll;
+}
+.mobile .guBt {
+    border-radius: 20px;
+    height: 30px;
+    margin: 7px;
+    width: 80px;
+}
+/* mainmodal 관광지 카테고리 css */
+/* .mobile .categoryAll{
+    width:400px;
+} */
+.mobile .categoryAll{
+    width: 100%;
+    margin-top: 50px;
+}
+.mobile .categoryList{
+    width: 100%;
+    border: none;
+    overflow-y: scroll;
+    margin-top: 0;
+}
+.mobile .categoryBtns button{
+    font-size: 12px;
+    width: 60px;
+    height: 30px;
+    margin-right: 10px;
+}
+.mobile .categoryBtns button:last-child{
+    margin-right:0;
+}
+.mobile .listContents {
+    width:100%;
+}
+.mobile .listContents .icon {
+    width: 10vw;
+    height: 5vh;
+}
+
+.mobile .listInfo{
+    font-size: 12px;
+}
+/* datePicker 전용 css */
+.modal-content.mobile{
+    padding: 0;
+}
+
+.mobile .modal-default{
+    width: 200px;
+    padding: 0;
+}
+.mobile .tripTitle label{
+    color: #F6A354;
+    font-size: 20px;
+    margin : 20px 0;
+    font-weight: bold;
+}
+.mobile .tripTitle label input {
+    font-size: 12px;
+    width: 200px;
+    height: 25px;
+    border: 1px solid #DADADA;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.mobile .modal-title{
+    margin-top: 20px;
+}
+.mobile .tripDates h3 {
+    color: #F6A354;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.mobile .react-datepicker {
+    font-size: 15px;
+    border: 1px solid #aeaeae;
+    border-radius: 0.3rem;
+}
+.mobile .dateCheckResult{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0;
+}
+.mobile .dateCheckResult p {
+    font-size: 12px;
+    border: 2px solid #F6A354;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+}
+
+.mobile .modal-actions{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.mobile .modal-actions button {
+    min-width: 60px;
+    padding: 10px;
+    border-radius: 20px;
+}
+/* newtrip 모달 반응형 */
+.mobile .newTripModal{
+    overflow: scroll;
+}
+/* addData 검색 리스트 모달 반응형 css */
+.mobile .searchList{
+    width: 100%;
+    overflow: scroll;
+    padding: 15px;
+    margin: 25px 0;
+}
+.mobile .searchList ul li{
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+    overflow-x: scroll;
+}
+.mobile .searchList .listNumber{
+    width:2px;
+    height: 2px;
+    font-size: 10px;
+    margin:0;
+    padding:10px;
+}
+.mobile .searchList .listTitle{
+    font-size: 12px;
+    margin: 0 20px;
+}
+.mobile .searchList .addressBtn{
+    font-size: 12px;
+    height: auto;
+    border-radius: 10px;
+    padding: 2px 12px;
+
+}
+.mobile .searchList p{
+    margin-top: 20px;
+}
+
+/*entireplan 반응형  */
+/* 모바일 반응형 */
+.myPlan.mobile{
+    width: 350px;
+    margin-top: 100px;
+    position: absolute;
+    top: 15%;
+}
+.myPlan.mobile h2{
+    margin-top:0;
+}
+.mobile .myPlanContainer {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    max-height: 800px;
+    background-color: #ffffffb3;
+}
+.mobile .tripTitle p {
+    font-size: 20px;
+    font-weight: 600;
+}
+.mobile .mapFrame {
+    width: 100%;
+    height: 350px;
+    flex: none;
+}
+.mobile #dayChecks input {
+    width: 35px;
+    height:25px;
+    font-size: 10px;
+}
+.mobile .duration {
+    border: 2px solid #f6a354;
+    border-radius: 15px;
+    bottom: 5%;
+    height: auto;
+    right: 5%;
+    width: 150px;
+    height:60px;
+    font-size: 12px;
+}
+.mobile .duration p {
+    margin:0;
+    padding-left: 10px;
+}
+.mobile .duration p:first-child{
+    padding-bottom: 10px;
+}
