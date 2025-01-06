@@ -76,7 +76,7 @@ const Login = () => {
     const socialLogin = (e, provider) => {
         e.preventDefault();
         // window.localStorage.origin : 현재웹페이지의 origin --> origin  : http://localhost:3000 ----프로토콜, 도메인, 포트번호 를 합친것을 origin이라고 한다.
-        window.location.href = `http://ec2-43-200-249-137.ap-northeast-2.compute.amazonaws.com:8080/auth/authorize/${provider}?redirect_url=${window.location.origin}`;
+        window.location.href = `http://ec2-43-203-55-4.ap-northeast-2.compute.amazonaws.com:8080/auth/authorize/${provider}?redirect_url=${window.location.origin}`;
 
     }
     return (
